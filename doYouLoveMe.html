@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>You must love me</title>
+</head>
+<style>
+    #myBtn{
+        position: absolute;
+    }
+    body{
+
+        background-color: lightpink;
+
+    }
+    #hi{
+        position: center;
+        text-align: center;
+    }
+
+</style>
+<body>
+<div id="hi">
+    <h2>Do You Love Me?</h2><br/>
+    <button type="button" id="yes" onclick="yes()">yes</button>
+    <button type="button" id="myBtn" onmouseover="myFunction()">no</button>
+</div>
+    <script>
+    
+    function yes() {
+        alert('right choice!');
+    }
+    function myFunction() {
+        let w=Math.round(Math.random()*window.innerWidth);
+        let h=Math.round(Math.random()*window.innerHeight);
+        document.getElementById('myBtn').style.left=w+'px';
+        document.getElementById('myBtn').style.top=h+'px';
+
+
+    }
+
+
+</script>
+</body>
+</html>
